@@ -10,14 +10,14 @@ import { OrderRouter } from "./routes/order";
 
 dotenv.config();
 const app = express();
-app.use(cors());
-app.use(express.json());
-connectDb();
+// app.use(cors());
+// app.use(express.json());
+// connectDb();
 
-app.use(router);
-app.use(FoodRouter);
-app.use(CategoryRouter);
-app.use(OrderRouter);
+// app.use(router);
+// app.use(FoodRouter);
+// app.use(CategoryRouter);
+// app.use(OrderRouter);
 app.listen(8000, () => {
   console.log("running on port 8000");
 });
