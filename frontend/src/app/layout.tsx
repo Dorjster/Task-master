@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Footer } from "../components/footer/Footer";
-import { Header } from "../components/header/Header";
+// import { Footer } from "../components/footer/Footer";
+// import { Header } from "../components/header/Header";
 
 import "./globals.css";
-import { DataProvider } from "@/context/dataProvider";
-import { SearchProvider } from "@/context/search";
-import { BasketProvider } from "@/context/basket";
+// import { DataProvider } from "@/context/dataProvider";
+// import { SearchProvider } from "@/context/search";
+// import { BasketProvider } from "@/context/basket";
 
 export const metadata: Metadata = {
   title: "Food fucking Delivery",
@@ -22,15 +22,16 @@ export default function RootLayout({
       <body>
         <div>
           <div className="px-[20px] md:px-[120px]">
-            <BasketProvider>
+            {/* <BasketProvider>
               {" "}
               <SearchProvider>
                 <DataProvider>
-                  <Header />
-                  {children} <Footer />
-                </DataProvider>
+                  <Header /> */}
+                  {children} 
+                  {/* <Footer /> */}
+                {/* </DataProvider>
               </SearchProvider>{" "}
-            </BasketProvider>
+            </BasketProvider> */}
           </div>
         </div>
       </body>
